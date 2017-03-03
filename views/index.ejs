@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<div class="col-md-4">
+
+    <h1><span class="fa fa-sign-in"></span> Hello World</h1>
+    <form action="/api/user" method="post">
+    <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        
+        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+    </form>
+</div>
+
+<div class="col-md-4">
+
+    <h1><span class="fa fa-sign-in"></span>Update</h1>
+    <form action="/api/user/update" method="post">
+    <div class="form-group">
+     <label>ID</label>
+            <input type="text" class="form-control" name="id">
+    </div>
+    <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        
+        <button type="submit" class="btn btn-warning btn-lg">Update</button>
+    </form>
+</div>
+<div class="col-md-4">
+
+    <h1><span class="fa fa-sign-in"></span>Delete</h1>
+    <form action="/api/user/delete" method="post">
+    <div class="form-group">
+     <label>ID</label>
+            <input type="text" class="form-control" name="id">
+    </div>
+        <button type="submit" class="btn btn-warning btn-lg">Delete</button>
+    </form>
+</div>
+
+</div>
+</body>
+</html>
